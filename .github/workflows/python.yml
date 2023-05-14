@@ -10,7 +10,7 @@ on:
       - python/**
 jobs:
   push:
-    name: "yolks:python_${{ matrix.tag }}"
+    name: "images:python_${{ matrix.tag }}"
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false

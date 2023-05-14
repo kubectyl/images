@@ -13,7 +13,7 @@ on:
 
 jobs:
   pushMultiArch:
-    name: "yolks:installers_multiarch:${{ matrix.tag }}"
+    name: "images:installers_multiarch:${{ matrix.tag }}"
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -44,7 +44,7 @@ jobs:
             ghcr.io/kubectyl/installers:${{ matrix.tag }}
 
   pushAmd:
-    name: "yolks:installers_amd:${{ matrix.tag }}"
+    name: "images:installers_amd:${{ matrix.tag }}"
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
